@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get task by ID",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "assigner": {
+      "type": "number"
+    },
+    "project_id": {
+      "type": "number"
+    },
+    "section_id": {
+      "type": "number",
+      "minimum": 0
+    },
+    "order": {
+      "type": "number"
+    },
+    "content": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "label_ids": {
+      "type": "array"
+    },
+    "priority": {
+      "type": "number"
+    },
+    "comment_count": {
+      "type": "number"
+    },
+    "creator": {
+      "type": "number"
+    },
+    "created": {
+      "type": "string"
+    },
+    "due": {
+      "recurring": {"type": "boolean"},
+      "string": {"type":  "string"},
+      "date": {"type": "string"}
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "assigner",
+    "project_id",
+    "content",
+    "completed",
+    "priority",
+    "creator"
+  ]
+}
